@@ -21,10 +21,13 @@ h1 {
 }
 
 .display {
+  display: flex;
   background-image: url(./img/display.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+  justify-content: center;
+  align-items: center;
 }
 
 .last {
@@ -40,6 +43,15 @@ h1 {
 .plus {
   display: none;
 }
+
+video {
+  border-radius: 1em;
+}
+
+.videobox {
+  width: 80%;
+}
+
 
 footer {
   text-align: right;
