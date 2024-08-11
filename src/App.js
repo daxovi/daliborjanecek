@@ -5,20 +5,16 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Dalibor Janček: Interactive experience</h1>
+        <h1>Dalibor Janček: Visual experience</h1>
       </header>
-<div></div>
-<div className='display first'>
-  <div className="videobox">
-  <video width="100%" autoPlay muted loop>
-  <source src={video_riva} type="video/mp4" />
-  </video>
-  </div>
-
-</div>
-<div className='display'></div>
-<div className='display plus'></div>
-<div className='display last'></div>
+      <div></div>
+      <div className='display'>
+          <video autoPlay muted loop>
+            <source src={video_riva} type="video/mp4" />
+          </video>
+      </div>
+      <div className='display'></div>
+      <div className='display'></div>
       <footer>
         DJ
       </footer>
