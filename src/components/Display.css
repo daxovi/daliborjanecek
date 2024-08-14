@@ -1,0 +1,51 @@
+.display {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    border-radius: 2em;
+    overflow: hidden;
+    box-shadow: 0.5em 0.5em 3em rgba(0, 0, 0, 0.3);
+  }
+
+  .media {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Přidat */
+    object-position: 50% 50%;  /* Přidat */
+  }
+
+  
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .d-1 {
+    grid-column: span 1;
+  }
+
+  .d-2 {
+    grid-column: span 2;
+    aspect-ratio: 9/16;
+  }
+
+  .d-3 {
+    grid-column: span 3;
+    aspect-ratio: 0.876;
+  }
+
+  .d-4 {
+    grid-column: span 4;
+    aspect-ratio: 1.19;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .display {
+      margin: 1em;
+    }
+  }

@@ -3,6 +3,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #2F2F2F;
+  color: #E1E1E1;
   background-image: url('./img/logo.svg');
   background-position: 0 0;
   background-attachment: fixed;
