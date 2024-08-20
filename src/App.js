@@ -4,9 +4,16 @@ import Header from './components/Header';
 function App(props) {
   return (
     <div className="container">
-      <Header />
+      <div className='header'>
+        header
+      </div>
 
-      {props.children}
+{/*  {props.children}   */}
+
+<div className="horizontal-scroll-wrapper">
+{props.children}
+</div>
+
 
       <footer>
         DJ

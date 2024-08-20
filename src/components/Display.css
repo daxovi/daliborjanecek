@@ -25,22 +25,15 @@
     height: 100%;
   }
 
-  .d-1 {
-    grid-column: span 1;
-  }
-
   .d-2 {
-    grid-column: span 2;
     aspect-ratio: 9/16;
   }
 
   .d-3 {
-    grid-column: span 3;
     aspect-ratio: 0.876;
   }
 
   .d-4 {
-    grid-column: span 4;
     aspect-ratio: 1.19;
   }
 
