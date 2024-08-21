@@ -26,7 +26,12 @@ function App(props) {
     const handleWheel = (event) => {
       event.preventDefault(); // Zabrání standardnímu vertikálnímu skrolování
 
-      scrollAmount += event.deltaY * 0.5; // Zvýšení rychlosti skrolování
+      // Kombinace vertikálního a horizontálního skrolování
+      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+        scrollAmount += event.deltaX * 0.5; // Horizontální skrolování
+      } else {
+        scrollAmount += event.deltaY * 0.5; // Vertikální skrolování
+      }
 
       if (!isScrollingRef.current) {
         isScrollingRef.current = true;
@@ -48,12 +53,9 @@ function App(props) {
         header
       </div>
 
-      {/*  {props.children}   */}
-
       <div className="horizontal-scroll-wrapper" ref={scrollWrapperRef}>
         {props.children}
       </div>
-
 
       <footer>
         DJ

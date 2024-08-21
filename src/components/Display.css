@@ -1,8 +1,8 @@
 .display {
     position: relative;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
+    align-items: stretch;
     margin: 1.5em;
     border-radius: 2em;
     overflow: hidden;
@@ -30,15 +30,9 @@
   }
 
   .d-3 {
-    aspect-ratio: 0.876;
+    aspect-ratio: 1;
   }
 
   .d-4 {
-    aspect-ratio: 1.19;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .display {
-      margin: 1em;
-    }
+    aspect-ratio: 16/9;
   }
