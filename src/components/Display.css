@@ -4,7 +4,7 @@
     justify-content: stretch;
     align-items: stretch;
     margin: 1.5em;
-    border-radius: 2em;
+    border-radius: 1vw;
     overflow: hidden;
     box-shadow: 0.2em 0.2em 0.5em rgb(47, 59, 70);
   }

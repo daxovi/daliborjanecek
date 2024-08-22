@@ -2,7 +2,7 @@
   padding: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 1fr 150px;
+  grid-template-rows: 150px 1fr 3em;
   align-content: stretch;
   height: 100vh;
   box-sizing: border-box;
@@ -22,8 +22,9 @@ a.logo {
 .horizontal-scroll-wrapper {
   margin-left: -2em;
   margin-right: -2em;
-  display: flex;
-  overflow-y: auto;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
   white-space: nowrap;
   grid-row: 2;
   grid-column: 1 / -1;
