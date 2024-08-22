@@ -5,13 +5,13 @@ import { WorkModel } from '../models/WorkModel';
 export const content = [
     new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video", "motion"], img1, "", "d-2", ""),
     new WorkModel("Nějaký titulek", "lipsum lipsum lipsum lipsum", ["design", "motion"], video_riva, "", "d-2", ""),
-    new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video"], img1, "", "d-2", "http://www.seznam.cz"),
+    new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video"], img1, "", "d-4", "http://www.seznam.cz"),
     new WorkModel("Nějaký titulek", "lipsum lipsum lipsum lipsum", ["design"], video_riva, "", "d-2", ""),
     new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video"], img1, "", "d-3", ""),
     new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video", "motion"], img1, "", "d-2", "https://www.google.com"),
     new WorkModel("Nějaký titulek", "lipsum lipsum lipsum lipsum", ["design", "motion"], video_riva, "", "d-2", ""),
     new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video"], img1, "", "d-2", ""),
-    new WorkModel("Nějaký titulek", "lipsum lipsum lipsum lipsum", ["design"], video_riva, "", "d-2", ""),
+    new WorkModel("Nějaký titulek", "lipsum lipsum lipsum lipsum", ["design"], video_riva, "", "d-4", ""),
     new WorkModel("titulek 2", "lipsum lipsum lipsum lipsum", ["video"], img1, "", "d-3", "")
 ];
 
