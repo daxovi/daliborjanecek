@@ -8,7 +8,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #494F5D;
+  background: #494F5D;
   color: var(--text-color);
   margin: 0;
   padding: 0;
