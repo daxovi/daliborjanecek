@@ -1,6 +1,9 @@
 import './App.css';
 import { useEffect, useRef } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import logo from "./img/dj2025.svg"
+import Download from './components/Download';
 
 function App(props) {
   const scrollWrapperRef = useRef(null);
@@ -41,23 +44,20 @@ function App(props) {
       cancelAnimationFrame(animationFrameId); // Vyčistí animaci při unmount
     };
   }, []);
- 
+
   return (
     <div className="container">
-      <div className='header'>
-        header
-      </div>
-
-      {/*  {props.children}   */}
+      <a className='logo' href="">
+        <img src={logo} alt="" />
+      </a>
+      <Header />
 
       <div className="horizontal-scroll-wrapper" ref={scrollWrapperRef}>
         {props.children}
+        <Download />
       </div>
 
-
-      <footer>
-        DJ
-      </footer>
+      <Footer />
     </div>
   );
 }

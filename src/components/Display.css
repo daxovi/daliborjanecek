@@ -6,7 +6,11 @@
     margin: 1.5em;
     border-radius: 2em;
     overflow: hidden;
-    box-shadow: 0.5em 0.5em 3em rgba(0, 0, 0, 0.3);
+    box-shadow: 0.2em 0.2em 0.5em rgb(47, 59, 70);
+  }
+
+  .display:first-of-type {
+    margin-left: 120px;
   }
 
   .media {

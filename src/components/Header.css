@@ -1,120 +1,22 @@
 header {
-    grid-column: 3 / -1;
-    grid-row: 1;
     display: flex;
-    align-items: center;
-    padding: 6em;
-}
-
-.text {
-    display: flex;
+    align-items: flex-end;
+    grid-column: 2 / -1;
+    justify-content: center;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
-    gap: 2em;
+    gap: 0.3em;
 }
 
 /* MARK: H1 
 */
 header h1 {
     margin: 0;
-    color: #E1E1E1;
-    font-size: 4em;
+    color: var(--text-color);
+    font-size: 1.5em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 header h1 span {
-    font-weight: 100;
-}
-
-/* MARK: NAV 
-*/
-header nav {
-    margin: 1em 0 0;
-    display: flex;
-    gap: 1em;
-}
-
-header nav a {
-    text-decoration: line-through;
-    text-decoration-thickness: 2px;
-    color: aqua;
-    margin-right: 0.3em;
-    padding: 0.3em;
-    margin-left: -0.3em;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-}
-
-header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-header nav a.active {
-    text-decoration: none;
-}
-
-/* Když jsme na kořenové cestě, nepoužívat přeškrtnutí */
-header nav.no-strikethrough a {
-    text-decoration: none;
-}
-
-/* MARK: CONTACT
-*/
-
-header .contact p {
-    margin: 0.3em 0;
-}
-
-header .contact a {
-    color: #E1E1E1;
-}
-
-/* MARK: SOCIAL
-*/
-header .social {
-    display: flex;
-    gap: 1em;
-}
-
-header .social img {
-    width: 1.5em;
-    height: 1.5em;
-}
-
-@media only screen and (max-width: 1260px) {
-    header {
-        grid-column: 2 / -1;
-    }
-}
-
-@media only screen and (max-width: 920px) {
-    header {
-        grid-column: 1 / -1;
-        padding: 5em;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 3em;
-        padding-top: 5em;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    header {
-        padding: 1em;
-        padding-top: 5em;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
+    font-weight: 200;
 }

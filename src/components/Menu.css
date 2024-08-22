@@ -1,0 +1,32 @@
+/* MARK: NAV 
+*/
+nav {
+    margin: 1em 0 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color: var(--link-color);
+    margin-right: 0.3em;
+    padding: 0.3em;
+    margin-left: -0.3em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav a.active {
+    text-decoration: none;
+}
+
+/* Když jsme na kořenové cestě, nepoužívat přeškrtnutí */
+nav.no-strikethrough a {
+    text-decoration: none;
+}

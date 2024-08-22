@@ -1,0 +1,19 @@
+footer {
+    grid-column: -2;
+    grid-row: -2;
+}
+
+
+/* MARK: SOCIAL
+*/
+.social {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social img {
+    width: 1.5em;
+    height: 1.5em;
+}

@@ -1,0 +1,10 @@
+.download {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    margin-right: 20em;
+    align-content: center;
+    row-gap: 1em;
+  }
