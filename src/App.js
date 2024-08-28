@@ -2,8 +2,8 @@ import './App.css';
 import { useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import logo from "./img/dj2025.svg"
 import Download from './components/Download';
+import Logo from './components/Logo';
 
 function App(props) {
   const scrollWrapperRef = useRef(null);
@@ -52,9 +52,7 @@ function App(props) {
 
   return (
     <div className="container">
-      <a className='logo' href="">
-        <img src={logo} alt="" />
-      </a>
+      <Logo />
       <Header />
 
       <div className="horizontal-scroll-wrapper" ref={scrollWrapperRef}>

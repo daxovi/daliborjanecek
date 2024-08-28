@@ -1,7 +1,7 @@
 .container {
   padding: 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 150px 1fr 3em;
   align-content: stretch;
   height: 100vh;

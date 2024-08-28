@@ -15,7 +15,7 @@ const Display = ({ workModel }) => {
     } else if (workModel.type === "video") {
         return (
             <div className={className}>
-                <video className="media" autoPlay muted loop>
+                <video className="media" playsInline autoPlay muted loop>
                     <source src={workModel.src} type="video/mp4" />
                 </video>
                 <Overlay workModel={workModel} />
