@@ -55,9 +55,12 @@
 
   @media screen and (max-width: 650px) {
     .display {
+      position: static;
       border-radius: 0;
       box-shadow: none;
       overflow:visible;
+      display: flex;
+flex-direction: column;
     }
     .display:first-of-type {
       margin-left: 1em;

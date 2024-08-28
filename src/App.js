@@ -12,42 +12,47 @@ function App(props) {
   useEffect(() => {
     const scrollWrapper = scrollWrapperRef.current;
 
-    let scrollAmount = 0;
-    let animationFrameId;
+    if (window.innerWidth >= 651) {
+      let scrollAmount = 0;
+      let animationFrameId;
 
-    const smoothScroll = () => {
-      scrollWrapper.scrollLeft += scrollAmount;
-      scrollAmount *= 0.9; // Postupné zpomalení skrolování pro plynulý efekt
+      const smoothScroll = () => {
+        scrollWrapper.scrollLeft += scrollAmount;
+        scrollAmount *= 0.9; // Postupné zpomalení skrolování pro plynulý efekt
 
-      if (Math.abs(scrollAmount) > 0.5) {
-        animationFrameId = requestAnimationFrame(smoothScroll);
-      } else {
-        isScrollingRef.current = false; // Zastaví animaci, když je pohyb malý
-      }
-    };
+        if (Math.abs(scrollAmount) > 0.5) {
+          animationFrameId = requestAnimationFrame(smoothScroll);
+        } else {
+          isScrollingRef.current = false; // Zastaví animaci, když je pohyb malý
+        }
+      };
 
-    const handleWheel = (event) => {
-      event.preventDefault(); // Zabrání standardnímu vertikálnímu skrolování
+      const handleWheel = (event) => {
+        event.preventDefault(); // Zabrání standardnímu vertikálnímu skrolování
 
-      // Kombinace vertikálního a horizontálního skrolování
-      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-        scrollAmount += event.deltaX * 0.5; // Horizontální skrolování
-      } else {
-        scrollAmount += event.deltaY * 0.5; // Vertikální skrolování
-      }
+        // Kombinace vertikálního a horizontálního skrolování
+        if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+          scrollAmount += event.deltaX * 0.5; // Horizontální skrolování
+        } else {
+          scrollAmount += event.deltaY * 0.5; // Vertikální skrolování
+        }
 
-      if (!isScrollingRef.current) {
-        isScrollingRef.current = true;
-        animationFrameId = requestAnimationFrame(smoothScroll);
-      }
-    };
+        if (!isScrollingRef.current) {
+          isScrollingRef.current = true;
+          animationFrameId = requestAnimationFrame(smoothScroll);
+        }
+      };
 
-    scrollWrapper.addEventListener('wheel', handleWheel);
+      scrollWrapper.addEventListener('wheel', handleWheel);
 
-    return () => {
-      scrollWrapper.removeEventListener('wheel', handleWheel);
-      cancelAnimationFrame(animationFrameId); // Vyčistí animaci při unmount
-    };
+      return () => {
+        scrollWrapper.removeEventListener('wheel', handleWheel);
+        cancelAnimationFrame(animationFrameId); // Vyčistí animaci při unmount
+      };
+    }
+
+    // Pokud je šířka okna menší než 651px, nedělej nic, ponech standardní skrolování
+    return () => {};
   }, []);
 
   return (

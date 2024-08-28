@@ -51,13 +51,16 @@
 
 @media screen and (max-width: 650px) {
     .overlay {
-      position:relative;
+      position: static;
+      top: auto;
+      left: auto;
       grid-column: auto;
       grid-row: auto;
       opacity: 1;
       opacity: 1;
       background: none;
       padding: 1em 0 1.5em 0;
+      overflow: visible;
     }
 
     .overlay--description {

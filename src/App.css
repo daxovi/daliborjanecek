@@ -43,6 +43,8 @@ a.logo {
     grid-row: 3;
     margin-left: -1.5em;
     margin-right: -1.5em;
+    scrollbar-width: none;
+
   }
 }
 
@@ -52,6 +54,8 @@ a.logo {
     overflow-x:visible;
     grid-auto-columns: auto;
     scrollbar-width: auto;
+    scrollbar-width: none;
+
     grid-row: 3;
   }
 
@@ -60,6 +64,6 @@ a.logo {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 150px 100px 1fr 3em;
-
+    height: auto;
   }
 }
