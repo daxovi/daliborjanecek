@@ -28,6 +28,7 @@
 
 .overlay--top {
     display: flex;
+    padding-bottom: 0.5em;
     justify-content: space-between;
 }
 
@@ -47,3 +48,20 @@
     font-size: 0.8em;
     padding-bottom: 1.3em;
 }
+
+@media screen and (max-width: 650px) {
+    .overlay {
+      position:relative;
+      grid-column: auto;
+      grid-row: auto;
+      opacity: 1;
+      opacity: 1;
+      background: none;
+      padding: 1em 0 1.5em 0;
+    }
+
+    .overlay--description {
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+    }
+  }

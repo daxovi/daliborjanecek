@@ -20,3 +20,11 @@ header h1 {
 header h1 span {
     font-weight: 200;
 }
+
+@media screen and (max-width: 840px) {
+    header {
+        grid-column: 1;
+        grid-row: 2;
+        align-items: flex-start;
+    }
+  }

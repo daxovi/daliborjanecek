@@ -40,3 +40,36 @@
   .d-16-9 {
     aspect-ratio: 16/9;
   }
+
+  @media screen and (max-width: 840px) {
+    .display {
+      margin: 1em;
+      border-radius: 3vw;
+    }
+
+
+    .display:first-of-type {
+      margin-left: 2em;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .display {
+      border-radius: 0;
+      box-shadow: none;
+      overflow:visible;
+    }
+    .display:first-of-type {
+      margin-left: 1em;
+    }
+
+    .d-9-16, .d-1, .d-16-9{
+      aspect-ratio: auto;
+    }
+
+    .media {
+      box-shadow: 0.2em 0.2em 0.5em rgb(47, 59, 70);
+      border-radius: 5vw;
+    }
+
+  }

@@ -30,5 +30,36 @@ a.logo {
   grid-column: 1 / -1;
   scrollbar-width: none;
   align-items: stretch;
-  grid-auto-columns:min-content;
+  grid-auto-columns: min-content;
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    grid-template-rows: 150px 100px 1fr 2em;
+    padding: 1.5em;
+  }
+
+  .horizontal-scroll-wrapper {
+    grid-row: 3;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .horizontal-scroll-wrapper {
+    grid-auto-flow: row;
+    overflow-x:visible;
+    grid-auto-columns: auto;
+    scrollbar-width: auto;
+    grid-row: 3;
+  }
+
+  .container {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 100px 1fr 3em;
+
+  }
 }
