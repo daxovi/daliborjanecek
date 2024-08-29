@@ -55,15 +55,14 @@ a.logo {
     grid-auto-columns: auto;
     scrollbar-width: auto;
     scrollbar-width: none;
-
     grid-row: 3;
   }
 
   .container {
-    padding: 2em;
+    padding: 1.5em;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 150px 100px 1fr 3em;
+    grid-template-rows: 60px 100px 1fr 3em;
     height: auto;
   }
 }

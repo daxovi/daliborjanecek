@@ -6,7 +6,7 @@ import logoInstagram from "../img/instagram.svg";
 const Footer = () => {
     return (
         <footer className="social">
-            <a href=""><img src={logoMessenger} alt="Messenger link" /></a>
+            <a href="https://m.me/daliborecek"><img src={logoMessenger} alt="Messenger link" /></a>
             <a href=""><img src={logoInstagram} alt="Instagram link" /></a>
         </footer>
     )

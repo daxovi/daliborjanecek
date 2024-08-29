@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Display from './components/Display';
-import { content, categories } from './content/content';
+import { content, highlight, categories } from './content/content';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -29,7 +29,7 @@ routes.unshift({
   path: "/",
   element: (
     <App>
-      {content.map((element, index) => (
+      {highlight.map((element, index) => (
         <Display key={index} workModel={element} />
       ))}
     </App>
