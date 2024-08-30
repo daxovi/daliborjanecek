@@ -21,7 +21,7 @@ header h1 span {
     font-weight: 200;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 840px), screen and (max-height: 840px) {
     header {
         grid-column: 1;
         grid-row: 2;

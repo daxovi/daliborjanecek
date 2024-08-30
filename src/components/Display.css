@@ -55,7 +55,7 @@ video {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px), screen and (max-height: 840px) {
   .display {
     position: static;
     border-radius: 0;
