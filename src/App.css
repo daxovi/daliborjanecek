@@ -23,6 +23,8 @@ a.logo {
   display: flex;
 }
 
+
+
 .horizontal-scroll-wrapper {
   margin-left: -2em;
   margin-right: -2em;
@@ -73,5 +75,9 @@ a.logo {
     grid-template-columns: auto;
     grid-template-rows: 60px 100px 1fr 3em;
     height: auto;
+  }
+
+  .logo img {
+    width: 110px;
   }
 }

@@ -16,7 +16,7 @@ const Overlay = ({ workModel }) => {
                 </div>
                 <div className="overlay--hashtag">
                     {workModel.category.map((category, index) => (
-                        <ButtonLink to={`/${category}`}>{category}</ButtonLink>
+                        <ButtonLink to={`/${category}`}>#{category}</ButtonLink>
                     ))}
                 </div>
 

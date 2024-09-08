@@ -62,7 +62,8 @@ function App(props) {
 
       <div className="horizontal-scroll-wrapper" ref={scrollWrapperRef}>
         {props.children}
-        <Download />
+      { // <Download />
+      }  
       </div>
 
       <Footer />
