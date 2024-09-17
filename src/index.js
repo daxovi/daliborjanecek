@@ -36,6 +36,17 @@ routes.unshift({
   )
 });
 
+routes.unshift({
+  path: "/card",
+  element: (
+    <App>
+      {highlight.map((element, index) => (
+        <Display key={index} workModel={element} />
+      ))}
+    </App>
+  )
+});
+
 const router = createBrowserRouter(routes);
 
 root.render(
